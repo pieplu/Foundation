@@ -77,8 +77,9 @@ function foundation_assets() {
 
 		// Load Stylesheets
 		wp_enqueue_style( 'normalize', get_template_directory_uri().'/css/normalize.css' );
-		wp_enqueue_style( 'foundation', get_template_directory_uri().'/css/foundation.min.css' );
-		wp_enqueue_style( 'app', get_stylesheet_uri(), array('foundation') );
+		//wp_enqueue_style( 'foundation', get_template_directory_uri().'/css/foundation.min.css' );
+        wp_enqueue_style( 'appSass', get_template_directory_uri().'/css/app.css' );
+		//wp_enqueue_style( 'app', get_stylesheet_uri(), array('foundation') );
 
 		// Load Google Fonts API
 		wp_enqueue_style( 'google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300' );
